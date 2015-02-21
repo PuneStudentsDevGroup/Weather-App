@@ -1,0 +1,178 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent" tools:context="workshop.myweatherapp.ui.WeatherFragment">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbWeather"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        style="@android:style/Widget.Material.ProgressBar.Large"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:visibility="gone"
+        android:id="@+id/llContainer"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:id="@+id/tvCityName"
+        android:text="City Name"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_margin="10dp"
+            android:layout_height="80dp"
+            android:id="@+id/ivWeatherIcon"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tvTemp"
+            android:layout_height="wrap_content"
+            android:textSize="70sp"
+            android:layout_margin="10dp"
+            android:text="25"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/tvWeatherDesc"
+            android:textSize="25sp"
+            android:text="Sky is clear"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:text="Pressure:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvPressure"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_margin="10dp"
+                android:text="25 mbar"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:text="Humidity:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvHumidity"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_margin="10dp"
+                android:text="47 %"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:text="Wind:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvWind"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_margin="10dp"
+                android:text="2.32 mph"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:text="Cloud Cover:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvCloud"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_margin="10dp"
+                android:text="54 %"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

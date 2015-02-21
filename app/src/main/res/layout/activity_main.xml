@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:theweatherapp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/headerbar"
+        android:layout_alignParentTop="true"
+        style="@style/HeaderBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar_actionbar"
+            android:background="@null"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            theweatherapp:titleTextAppearance="@style/ActionBar.TitleText"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/headerbar"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/flFragment">
+
+    </FrameLayout>
+
+
+</RelativeLayout>

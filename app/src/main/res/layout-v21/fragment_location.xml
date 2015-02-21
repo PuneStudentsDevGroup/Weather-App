@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="workshop.myweatherapp.ui.LocationFragment">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:clickable="true"
+        android:layout_centerInParent="true"
+        android:padding="40dp"
+        android:elevation="8dp"
+        android:background="@drawable/fab_ripple"
+        android:id="@+id/ivAddLoc"
+        android:stateListAnimator="@anim/ripple_anim"
+        android:src="@drawable/location"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbLocation"
+        android:visibility="gone"
+        android:layout_below="@id/ivAddLoc"
+        android:layout_margin="10dp"
+        style="@android:style/Widget.Material.ProgressBar.Large"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
